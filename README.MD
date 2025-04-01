@@ -1,4 +1,3 @@
-
 # MLX Whisper Transcription API & Frontend
 
 
@@ -79,12 +78,11 @@ Follow these instructions to set up and run the project on your local machine.
 
 ### Installation Steps
 
-1.  **Clone the Repository:**
-    Open your Terminal application and run the following command (replace `<https://github.com/your-user-nname/TranscribeAnything>` with the actual URL):
-    ```bash
-    git clone <your-repository-url>
-    cd mlx-whisper-transcription-app # Or your repository's folder name
-    ```
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-user-name/TranscribeAnything.git
+   cd TranscribeAnything
+   ```
     Please dont forget to change `your-user-name` to your actual GitHub username.
 
 2.  **Create a Virtual Environment:**
