@@ -19,10 +19,11 @@ app = FastAPI(
 # Add CORS middleware to allow cross-origin requests
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # For development - restrict this in production!
+    allow_origins=["http://localhost:3000"],  # Default to local frontend only
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST"],  # Restrict to methods you use
+    # Restrict to headers you need
+    allow_headers=["Content-Type", "Authorization"],
 )
 
 # Root endpoint
