@@ -1,3 +1,5 @@
+# backend/main.py
+
 import os
 import logging
 from fastapi import FastAPI, UploadFile, File, HTTPException, Depends, Form
@@ -51,7 +53,7 @@ async def transcribe_file(
             status_code=400, detail="File too large (max 100MB)")
 
     # Check file type
-    allowed_extensions = [".mp3", ".wav", ".m4a", ".flac"]
+    allowed_extensions = [".mp3", ".wav", ".m4a", ".flac", ".mov"]
     file_ext = os.path.splitext(file.filename)[1].lower()
     if file_ext not in allowed_extensions:
         raise HTTPException(
