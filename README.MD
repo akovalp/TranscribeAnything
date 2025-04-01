@@ -24,9 +24,9 @@ A full-stack application demonstrating speech-to-text transcription using Apple'
 
 ---
 
-## 📸 Screenshot / GIF
+## 📸 Example Flow
 
-
+https://github.com/user-attachments/assets/353ad8ce-9569-4d25-a92d-6b8fa539bc41
 
 
 
