@@ -26,7 +26,7 @@ A full-stack application demonstrating speech-to-text transcription using Apple'
 
 ## 📸 Screenshot / GIF
 
-**(Highly Recommended!)** Add a screenshot or an animated GIF here demonstrating the application flow (uploading a file, transcribing, viewing results). This gives viewers an immediate understanding of the project.
+
 
 
 
@@ -80,11 +80,12 @@ Follow these instructions to set up and run the project on your local machine.
 ### Installation Steps
 
 1.  **Clone the Repository:**
-    Open your Terminal application and run the following command (replace `<your-repository-url>` with the actual URL):
+    Open your Terminal application and run the following command (replace `<https://github.com/your-user-nname/TranscribeAnything>` with the actual URL):
     ```bash
     git clone <your-repository-url>
     cd mlx-whisper-transcription-app # Or your repository's folder name
     ```
+    Please dont forget to change `your-user-name` to your actual GitHub username.
 
 2.  **Create a Virtual Environment:**
     It's best practice to keep project dependencies separate.
@@ -174,7 +175,6 @@ A simple test script (`test.py`) is included to directly test the backend API en
 *   **Asynchronous Processing:** For very long audio files, move the `mlx-whisper` transcription to a background task (e.g., using FastAPI's `BackgroundTasks` or Celery) so the API request returns immediately, and the frontend polls for results.
 *   **Dockerization:** Containerize the application (Note: Docker on macOS with MLX acceleration can be complex).
 *   **Error Handling:** More granular error handling and user feedback on both frontend and backend.
-*   **Model Selection:** Allow selecting different Whisper model sizes (tiny, base, small, medium) via the UI/API.
 *   **Progress Indication:** Provide more detailed progress updates from the backend to the frontend during transcription (if feasible with `mlx-whisper`).
 *   **Deployment:** Explore options for deploying (keeping in mind the Apple Silicon dependency might limit cloud options or require specific hardware).
 *   **UI Enhancements:** Improve the Streamlit UI/UX further.
