@@ -183,7 +183,7 @@ A simple test script (`test.py`) is included to directly test the backend API en
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the `LICENSE` file for details (or choose another license if you prefer).
+This project is licensed under the MIT License - see the `LICENSE` file for details
 
 ---
 
